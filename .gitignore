@@ -1,0 +1,22 @@
+# Build artifacts
+/build/
+*.obj
+*.pdb
+*.ilk
+*.exp
+*.lib
+
+# Don't ship RAD's copyrighted DLL in the repo (it's only a local build input)
+src/binkw32_orig_ref.dll
+dist/binkw32_orig.dll
+
+# Crash captures
+*.dmp
+crashlogs/
+
+# Editor noise
+*.user
+.vs/
+
+# Local-only dev helper (references local analysis data, not for release)
+tools/whichfunc.py
